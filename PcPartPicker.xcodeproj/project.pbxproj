@@ -30,6 +30,8 @@
 		3F226A841AE6C1760020994F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F226A831AE6C1760020994F /* SystemConfiguration.framework */; };
 		3F226A861AE6C17E0020994F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F226A851AE6C17E0020994F /* libz.dylib */; };
 		3F226A881AE6C1A20020994F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F226A871AE6C1A20020994F /* libsqlite3.dylib */; };
+		3F226AA11AE826930020994F /* Squeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F226A961AE826270020994F /* Squeal.framework */; };
+		3F226B0C1AE9626D0020994F /* module.map in Sources */ = {isa = PBXBuildFile; fileRef = 3F226B0B1AE9626D0020994F /* module.map */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3F226A411AE56EA30020994F;
 			remoteInfo = PcPartPicker;
+		};
+		3F226A951AE826270020994F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F226A8A1AE826260020994F /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD7247F71996880300151E1E;
+			remoteInfo = "Squeal-OSX";
+		};
+		3F226A971AE826270020994F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F226A8A1AE826260020994F /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD7248021996880300151E1E;
+			remoteInfo = "Squeal-OSXTests";
+		};
+		3F226A991AE826270020994F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F226A8A1AE826260020994F /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB4C19C5F6F500862BFD;
+			remoteInfo = "Squeal-iOS";
+		};
+		3F226A9B1AE826270020994F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F226A8A1AE826260020994F /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB5619C5F6F500862BFD;
+			remoteInfo = "Squeal-iOSTests";
+		};
+		3F226A9D1AE826270020994F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F226A8A1AE826260020994F /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD3DE27919BCD44B00DED437;
+			remoteInfo = "SquealSpecHelpers-OSX";
+		};
+		3F226A9F1AE826270020994F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F226A8A1AE826260020994F /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB7019C5F77900862BFD;
+			remoteInfo = "SquealSpecHelpers-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -70,6 +114,8 @@
 		3F226A831AE6C1760020994F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3F226A851AE6C17E0020994F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		3F226A871AE6C1A20020994F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3F226A8A1AE826260020994F /* Squeal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Squeal.xcodeproj; path = Externals/Squeal/Squeal.xcodeproj; sourceTree = SOURCE_ROOT; };
+		3F226B0B1AE9626D0020994F /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.map; path = Externals/Squeal/modules/module.map; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F226AA11AE826930020994F /* Squeal.framework in Frameworks */,
 				3F226A881AE6C1A20020994F /* libsqlite3.dylib in Frameworks */,
 				3F226A861AE6C17E0020994F /* libz.dylib in Frameworks */,
 				3F226A841AE6C1760020994F /* SystemConfiguration.framework in Frameworks */,
@@ -110,6 +157,7 @@
 		3F226A391AE56EA30020994F = {
 			isa = PBXGroup;
 			children = (
+				3F226B0B1AE9626D0020994F /* module.map */,
 				3F226A891AE6C2D20020994F /* Framer Workers */,
 				3F226A441AE56EA30020994F /* PcPartPicker */,
 				3F226A5A1AE56EA30020994F /* PcPartPickerTests */,
@@ -131,6 +179,7 @@
 			children = (
 				3F226A471AE56EA30020994F /* AppDelegate.swift */,
 				3F226A491AE56EA30020994F /* ViewController.swift */,
+				3F226A8A1AE826260020994F /* Squeal.xcodeproj */,
 				3F226A4B1AE56EA30020994F /* Main.storyboard */,
 				3F226A4E1AE56EA30020994F /* Images.xcassets */,
 				3F226A501AE56EA30020994F /* LaunchScreen.xib */,
@@ -186,6 +235,19 @@
 				3F226A6C1AE6C01C0020994F /* ParseUI.framework */,
 			);
 			name = "Framer Workers";
+			sourceTree = "<group>";
+		};
+		3F226A8B1AE826260020994F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F226A961AE826270020994F /* Squeal.framework */,
+				3F226A981AE826270020994F /* Squeal-OSXTests.xctest */,
+				3F226A9A1AE826270020994F /* Squeal.framework */,
+				3F226A9C1AE826270020994F /* Squeal-iOSTests.xctest */,
+				3F226A9E1AE826270020994F /* SquealSpecHelpers.framework */,
+				3F226AA01AE826270020994F /* SquealSpecHelpers.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +317,12 @@
 			mainGroup = 3F226A391AE56EA30020994F;
 			productRefGroup = 3F226A431AE56EA30020994F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3F226A8B1AE826260020994F /* Products */;
+					ProjectRef = 3F226A8A1AE826260020994F /* Squeal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3F226A411AE56EA30020994F /* PcPartPicker */,
@@ -262,6 +330,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3F226A961AE826270020994F /* Squeal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Squeal.framework;
+			remoteRef = 3F226A951AE826270020994F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F226A981AE826270020994F /* Squeal-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Squeal-OSXTests.xctest";
+			remoteRef = 3F226A971AE826270020994F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F226A9A1AE826270020994F /* Squeal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Squeal.framework;
+			remoteRef = 3F226A991AE826270020994F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F226A9C1AE826270020994F /* Squeal-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Squeal-iOSTests.xctest";
+			remoteRef = 3F226A9B1AE826270020994F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F226A9E1AE826270020994F /* SquealSpecHelpers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SquealSpecHelpers.framework;
+			remoteRef = 3F226A9D1AE826270020994F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F226AA01AE826270020994F /* SquealSpecHelpers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SquealSpecHelpers.framework;
+			remoteRef = 3F226A9F1AE826270020994F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3F226A401AE56EA30020994F /* Resources */ = {
@@ -290,6 +403,7 @@
 			files = (
 				3F226A4A1AE56EA30020994F /* ViewController.swift in Sources */,
 				3F226A481AE56EA30020994F /* AppDelegate.swift in Sources */,
+				3F226B0C1AE9626D0020994F /* module.map in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +533,7 @@
 				);
 				INFOPLIST_FILE = PcPartPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -434,7 +549,9 @@
 				);
 				INFOPLIST_FILE = PcPartPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$App Development/PcPartPicker/Externals/Squeal/Modules";
 			};
 			name = Release;
 		};
@@ -491,6 +608,7 @@
 				3F226A631AE56EA30020994F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F226A641AE56EA30020994F /* Build configuration list for PBXNativeTarget "PcPartPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +617,7 @@
 				3F226A661AE56EA30020994F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

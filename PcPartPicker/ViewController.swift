@@ -17,6 +17,6 @@ class ViewController: UIViewController {
         testObject["foo"] = "bar"
         testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
         println("Object has been saved.")}
-        println("big weenie")
+        println("test")
     }
 }

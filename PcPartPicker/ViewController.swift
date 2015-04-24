@@ -9,9 +9,12 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
+        self.view.backgroundColor = UIColor(patternImage: UIImage (named: "PCPartPickerHOME_0001_Background")!)
         super.viewDidLoad()
         let testObject = PFObject(className: "TestObject")
         testObject["foo"] = "bar"

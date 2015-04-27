@@ -11,6 +11,7 @@ import Parse
 
 class ViewController: UIViewController
 {
+    @IBOutlet weak var scrollViewHomeView: UIScrollView!
 
     override func viewDidLoad()
     {

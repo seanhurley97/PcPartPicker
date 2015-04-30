@@ -12,6 +12,8 @@ import Parse
 class ViewController: UIViewController
 {
     @IBOutlet weak var scrollViewHomeView: UIScrollView!
+    
+    let myDatabase = FMDatabase(path: "/Users/student/Desktop/sql_computer_hardware_database/sql_computer_hardware_database_test_data.sql")
 
     override func viewDidLoad()
     {
@@ -21,5 +23,9 @@ class ViewController: UIViewController
         testObject["foo"] = "bar"
         testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
         println("Object has been saved.")}
+        if myDatabase.open()
+        {
+            println("database loaded successfully")
+        }
     }
 }

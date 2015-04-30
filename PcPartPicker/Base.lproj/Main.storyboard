@@ -37,6 +37,50 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PCPartPickerHOME_0000s_0000s_0000_logo" translatesAutoresizingMaskIntoConstraints="NO" id="L77-um-Ae2">
                                 <rect key="frame" x="0.0" y="28" width="375" height="77"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmH-MH-Pbe">
+                                <rect key="frame" x="35" y="165" width="305" height="65"/>
+                                <state key="normal" title="Button" image="PCPartPickerHOME_0000s_0002s_0002_Create-A-New-Build">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySl-fa-bkq">
+                                <rect key="frame" x="35" y="238" width="305" height="65"/>
+                                <state key="normal" title="Button" image="PCPartPickerHOME_0000s_0002s_0001_View-My-Builds">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xY6-Mz-nPT">
+                                <rect key="frame" x="35" y="311" width="305" height="65"/>
+                                <state key="normal" title="Button" image="PCPartPickerHOME_0000s_0002s_0000_View-Completed-Builds">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90f-73-9gO">
+                                <rect key="frame" x="35" y="384" width="305" height="65"/>
+                                <state key="normal" title="Button" image="PCPartPickerHOME_0000s_0001s_0002_Build-Guides">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0F-XX-6x9">
+                                <rect key="frame" x="35" y="457" width="305" height="65"/>
+                                <state key="normal" title="Button" image="PCPartPickerHOME_0000s_0001s_0001_Parts-Lists">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ju-m7-q74">
+                                <rect key="frame" x="35" y="530" width="305" height="65"/>
+                                <state key="normal" title="Button" image="PCPartPickerHOME_0000s_0001s_0000_View-Parts">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsl-Oq-nVc">
+                                <rect key="frame" x="159" y="608" width="56" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="0.8901960784313725" green="0.2627450980392157" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -53,5 +97,11 @@
         <image name="PCPartPickerHOME_0000s_0000s_0001_Home" width="251" height="104"/>
         <image name="PCPartPickerHOME_0000s_0000s_0002_Profile" width="250" height="104"/>
         <image name="PCPartPickerHOME_0000s_0000s_0003_Cart" width="249" height="104"/>
+        <image name="PCPartPickerHOME_0000s_0001s_0000_View-Parts" width="595" height="119"/>
+        <image name="PCPartPickerHOME_0000s_0001s_0001_Parts-Lists" width="595" height="119"/>
+        <image name="PCPartPickerHOME_0000s_0001s_0002_Build-Guides" width="595" height="119"/>
+        <image name="PCPartPickerHOME_0000s_0002s_0000_View-Completed-Builds" width="595" height="119"/>
+        <image name="PCPartPickerHOME_0000s_0002s_0001_View-My-Builds" width="595" height="119"/>
+        <image name="PCPartPickerHOME_0000s_0002s_0002_Create-A-New-Build" width="595" height="119"/>
     </resources>
 </document>

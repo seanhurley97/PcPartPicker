@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Main screen VC-->
@@ -21,12 +21,18 @@
                                 <state key="normal" image="PCPartPickerHOME_0000s_0000s_0003_Cart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="TpB-qU-B8X" kind="show" id="23A-TB-W9I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hd-h3-c87">
                                 <rect key="frame" x="125" y="98" width="125" height="52"/>
                                 <state key="normal" image="PCPartPickerHOME_0000s_0000s_0002_Profile">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2dU-Rs-gIh" kind="show" id="rh4-7b-Xtp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBx-iu-fpR">
                                 <rect key="frame" x="0.0" y="98" width="125" height="52"/>
@@ -94,6 +100,51 @@
             </objects>
             <point key="canvasLocation" x="1234.5" y="320.5"/>
         </scene>
+        <!--Cart VC-->
+        <scene sceneID="Ijx-VE-dHl">
+            <objects>
+                <viewController title="Cart VC" id="TpB-qU-B8X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jlm-SH-oRA"/>
+                        <viewControllerLayoutGuide type="bottom" id="PFA-IH-aTn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dxx-Qe-G3r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7z-3Z-q74">
+                                <rect key="frame" x="250" y="90" width="125" height="52"/>
+                                <state key="normal" image="PCPartPickerHOME_0000s_0000s_0003_Cart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvD-P0-hI4">
+                                <rect key="frame" x="125" y="90" width="125" height="52"/>
+                                <state key="normal" image="PCPartPickerHOME_0000s_0000s_0002_Profile">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9O-dg-N7O">
+                                <rect key="frame" x="0.0" y="90" width="125" height="52"/>
+                                <state key="normal" image="PCPartPickerHOME_0000s_0000s_0001_Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="uvB-7x-G9s"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PCPartPickerHOME_0000s_0000s_0000_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Mv4-Tg-T8E">
+                                <rect key="frame" x="0.0" y="20" width="375" height="77"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGS-Fh-dSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234.5" y="1059.5"/>
+        </scene>
         <!--"Create a New Build" VC-->
         <scene sceneID="gGQ-Da-BOH">
             <objects>
@@ -123,6 +174,9 @@
                                 <state key="normal" image="PCPartPickerHOME_0000s_0000s_0001_Home">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="WYM-iM-P0l"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PCPartPickerHOME_0000s_0000s_0000_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Zsn-6n-H20">
                                 <rect key="frame" x="0.0" y="20" width="375" height="77"/>
@@ -134,7 +188,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zD-bu-fuo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730.5" y="195.5"/>
+            <point key="canvasLocation" x="1730.5" y="320.5"/>
+        </scene>
+        <!--Profile VC-->
+        <scene sceneID="QXG-4U-OpH">
+            <objects>
+                <viewController title="Profile VC" id="2dU-Rs-gIh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Je-gb-iX4"/>
+                        <viewControllerLayoutGuide type="bottom" id="hlv-VH-rIR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q2j-CO-Ffo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxr-BX-UhE">
+                                <rect key="frame" x="250" y="90" width="125" height="52"/>
+                                <state key="normal" image="PCPartPickerHOME_0000s_0000s_0003_Cart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzY-sM-2ls">
+                                <rect key="frame" x="125" y="90" width="125" height="52"/>
+                                <state key="normal" image="PCPartPickerHOME_0000s_0000s_0002_Profile">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCN-88-6WS">
+                                <rect key="frame" x="0.0" y="90" width="125" height="52"/>
+                                <state key="normal" image="PCPartPickerHOME_0000s_0000s_0001_Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="OnQ-FK-BSD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PCPartPickerHOME_0000s_0000s_0000_logo" translatesAutoresizingMaskIntoConstraints="NO" id="1W0-kS-HZm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="77"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dJ-Hk-IcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234.5" y="-404.5"/>
         </scene>
     </scenes>
     <resources>
@@ -149,4 +248,7 @@
         <image name="PCPartPickerHOME_0000s_0002s_0001_View-My-Builds" width="595" height="119"/>
         <image name="PCPartPickerHOME_0000s_0002s_0002_Create-A-New-Build" width="595" height="119"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WYM-iM-P0l"/>
+    </inferredMetricsTieBreakers>
 </document>
